@@ -1,0 +1,294 @@
+body, div, h1, h2, h3, h4, p, ul, li, article, footer, header, hgroup, menu, nav, section
+{
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+
+article, footer, header, hgroup, menu, nav, section
+{
+  display:block;
+}
+
+body
+{
+  background-image: url(Ressources/shiny.jpg);
+  background-size:contain;
+}
+
+@font-face
+{
+  font-family: "varsity";
+  src: url("Ressources/varsity.ttf");
+}
+
+@font-face
+{
+  font-family: "craft";
+  src: url("Ressources/CRAFTFONT.ttf");
+}
+
+@font-face {
+font-family: "country";
+src: url("Ressources/country.ttf");
+}
+
+#container
+{
+  margin:0 auto;
+  padding:1.5em 0;
+  width:90%;
+}
+
+
+section p
+{
+  padding-left: 1.5em;
+  color: black;
+}
+
+.col footer a
+{
+  text-decoration: none;
+  border: 1px solid white;
+  text-align: center;
+  padding-left: 1%;
+  background-color: white;
+}
+
+.col footer a:hover
+{
+  text-decoration: none;
+  border: 1px solid white;
+  text-align: center;
+  padding-left: 1%;
+  background-color: beige;
+}
+
+#menu
+{
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  width: auto;
+}
+
+nav ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding: 5px;
+}
+
+nav ul li
+{
+  float: right;
+  list-style: none;
+  margin-left: 5px;
+  border: solid 1px;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+}
+
+nav ul li:hover
+{
+  float: right;
+  list-style: none;
+  margin-left: 5px;
+  border: solid 1px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+}
+
+nav ul li a
+{
+  display: inline;
+  font-size: x-large;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-weight:normal;
+}
+
+/* Sous-titre, (La formation, A propos etc...) */
+h1
+{
+  font-family: country;
+  color: black;
+  font-size:1.75em;
+  line-height:1.2;
+  margin-bottom:.75em;
+  padding-left: 0.5em;
+}
+
+/* Titre principal ( Referent numérique en entreprise à nancy) */
+h2
+{
+  font-family: craft;
+  color: white;
+  font-size:1.5em;
+  line-height:1.2;
+  margin-bottom:.75em;
+}
+
+h4
+{
+  font-size:1.125em;
+  line-height:1.25;
+  margin-bottom:1.25em;
+}
+
+p
+{
+  font-size:1em;
+  margin-bottom:1.5em;
+  text-align:justify;
+}
+
+header[role="banner"]
+{
+  text-align:center;
+}
+
+header[role="banner"] hgroup h2
+{
+  color: white;
+  font-size:2.5em;
+  margin-bottom:.4em;
+  margin-top:.6em;
+}
+
+/* les "content" correspondent au cadre central, il prend en compte le texte */
+
+#content .link
+{
+  display:block;
+  margin-bottom:1.5em;
+}
+
+#content
+{
+  background:rgba(115, 178, 185,0.5);
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+ul.arrow
+{
+  list-style:none;
+  margin-left:0;
+  padding-left:2px;
+}
+
+ul.arrow li
+{
+  margin-bottom:1.5em;
+}
+
+ul.arrow li:before
+{
+  content:">";
+  font:1em "Zapf Dingbats";
+  padding-right:8px;
+}
+
+article > header
+{
+  border-radius: 10px;
+  border-top:6px solid darkblue;
+  margin-top:1.5em;
+  padding-top:1.5em;
+}
+
+.box
+{
+  background:rgb(203, 223, 235);
+  background:rgba(115, 178, 185, .2);
+  border:1px solid #1E90FF;
+  clear:both;
+  margin-bottom:0px;
+  padding:1em;
+  padding-bottom:0px;
+  font-style:italic;
+  color: white;
+}
+
+.box p
+{
+  margin-bottom:.6em;
+}
+
+a, a:visited
+{
+  color:#444;
+  text-decoration:underline;
+}
+
+#container
+{
+  width:80%;
+}
+
+
+/*----EQUIPE----*/
+
+.organigramme
+{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#organi h2
+{
+    text-align: center;
+    font-family: arial;
+}
+
+#organi2 h2
+{
+    text-align: center;
+    font-family: arial;
+}
+
+.organigramme ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+
+.organigramme ul li
+{
+    display: inline-block;
+    padding: 0.0.9em;
+    border: solid 2px lightblue;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightgreen;
+    box-shadow: 5px -3.2px rgba(173, 216, 230, 1);
+}
+
+.organigramme span
+{
+    color: red;
+    text-align: center
+}
+
+.organigramme
+{
+    background: linear-gradient(blue, lightblue, lightgray, white);
+    background-repeat: no-repeat;
+}
